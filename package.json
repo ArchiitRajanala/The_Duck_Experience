@@ -1,0 +1,33 @@
+{
+  "name": "instagram-clone",
+  "version": "1.0.0",
+  "description": "Instagram Clone with Next.js and Firebase",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.7",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@google/model-viewer": "^4.0.0",
+    "firebase": "^9.23.0",
+    "firebase-admin": "^13.2.0",
+    "framer-motion": "^6.5.1",
+    "moment": "^2.x",
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.x"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/react": "^18.x",
+    "eslint": "^8.x",
+    "eslint-config-next": "^13.x",
+    "typescript": "^4.x"
+  }
+}
