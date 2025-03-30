@@ -1,10 +1,20 @@
 import React from 'react';
 import Post from './Post';
 
-const PostList = ({ posts }) => {
+interface PostType {
+  id: number;
+  title: string;
+  content: string;
+}
+
+interface PostListProps {
+  posts: PostType[];
+}
+
+const PostList: React.FC<PostListProps> = ({ posts }) => {
   return (
     <div>
-      {posts.map(post => (
+      {posts.map((post) => (
         <Post key={post.id} post={post} />
       ))}
     </div>
