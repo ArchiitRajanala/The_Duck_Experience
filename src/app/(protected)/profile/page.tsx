@@ -215,59 +215,6 @@ export default function ProfilePage() {
 
         <Divider />
 
-        <Box w="100%">
-          <Heading size="md" mb={4} color="orange.500">
-            Duck Preferences
-          </Heading>
-
-          <VStack spacing={4} align="stretch">
-            <FormControl>
-              <FormLabel>Favorite Duck</FormLabel>
-              <Input
-                value={preferences.favoriteDuck}
-                onChange={(e) => setPreferences({
-                  ...preferences,
-                  favoriteDuck: e.target.value
-                })}
-                isReadOnly={!isEditing}
-              />
-            </FormControl>
-
-            <FormControl>
-              <FormLabel>Bio</FormLabel>
-              <Textarea
-                value={preferences.bio}
-                onChange={(e) => setPreferences({
-                  ...preferences,
-                  bio: e.target.value
-                })}
-                isReadOnly={!isEditing}
-              />
-            </FormControl>
-
-            <FormControl>
-              <FormLabel>Location</FormLabel>
-              <Input
-                value={preferences.location}
-                onChange={(e) => setPreferences({
-                  ...preferences,
-                  location: e.target.value
-                })}
-                isReadOnly={!isEditing}
-              />
-            </FormControl>
-
-            {isEditing ? (
-              <Button colorScheme="orange" onClick={handleSave}>
-                Save Preferences
-              </Button>
-            ) : (
-              <Button onClick={() => setIsEditing(true)}>
-                Edit Preferences
-              </Button>
-            )}
-          </VStack>
-        </Box>
       </VStack>
     </Container>
   );
